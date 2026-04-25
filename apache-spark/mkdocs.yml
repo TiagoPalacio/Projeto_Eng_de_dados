@@ -1,0 +1,9 @@
+site_name: Apache Spark com Delta Lake e Iceberg
+theme:
+  name: material
+
+nav:
+  - Início: index.md
+  - Apache Spark (PySpark): spark.md
+  - Delta Lake: delta.md
+  - Apache Iceberg: iceberg.md

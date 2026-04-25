@@ -1,0 +1,16 @@
+site_name: Trabalho de Engenharia de Dados
+theme:
+  name: material
+  palette:
+    primary: blue
+nav:
+  - Contextualização: index.md
+  - Apache Spark: spark.md
+  - Delta Lake: delta.md
+  - Apache Iceberg: iceberg.md
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

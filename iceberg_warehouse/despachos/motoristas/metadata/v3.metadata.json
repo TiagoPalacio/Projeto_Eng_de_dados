@@ -1,0 +1,117 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "ca2123a1-66d4-417f-803e-c1026aa0a24f",
+  "location" : "c:\\Users\\User\\Downloads\\apache-spark\\iceberg_warehouse/despachos/motoristas",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1777146268461,
+  "last-column-id" : 4,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id_motorista",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "nome",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "veiculo",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "status",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "User",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4328736898155869869,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4328736898155869869,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7299790872006222102,
+    "timestamp-ms" : 1777146264654,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1777146255931",
+      "added-data-files" : "2",
+      "added-records" : "2",
+      "added-files-size" : "2463",
+      "changed-partition-count" : "1",
+      "total-records" : "2",
+      "total-files-size" : "2463",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "c:/Users/User/Downloads/apache-spark/iceberg_warehouse/despachos/motoristas/metadata/snap-7299790872006222102-1-0b812297-c6f6-4d40-b8fb-29e85ed5e080.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 4328736898155869869,
+    "parent-snapshot-id" : 7299790872006222102,
+    "timestamp-ms" : 1777146268461,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1777146255931",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "1",
+      "deleted-records" : "1",
+      "added-files-size" : "1257",
+      "removed-files-size" : "1259",
+      "changed-partition-count" : "1",
+      "total-records" : "2",
+      "total-files-size" : "2461",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "c:/Users/User/Downloads/apache-spark/iceberg_warehouse/despachos/motoristas/metadata/snap-4328736898155869869-1-847406fb-4443-4663-a7e8-df18ea2648c3.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1777146264654,
+    "snapshot-id" : 7299790872006222102
+  }, {
+    "timestamp-ms" : 1777146268461,
+    "snapshot-id" : 4328736898155869869
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1777146261751,
+    "metadata-file" : "c:/Users/User/Downloads/apache-spark/iceberg_warehouse/despachos/motoristas/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1777146264654,
+    "metadata-file" : "c:/Users/User/Downloads/apache-spark/iceberg_warehouse/despachos/motoristas/metadata/v2.metadata.json"
+  } ]
+}

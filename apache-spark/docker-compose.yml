@@ -1,0 +1,27 @@
+services:
+
+  spark-delta:
+    image: deltaio/delta-docker:latest
+    container_name: spark-delta
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./notebooks:/opt/spark/work-dir/notebooks
+      - ./delta-tables:/tmp/delta
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+
+  spark-iceberg:
+    image: tabulario/spark-iceberg
+    container_name: spark-iceberg
+    ports:
+      - "8889:8888"
+      - "8080:8080"
+      - "10000:10000"
+    volumes:
+      - ./notebooks:/home/iceberg/notebooks/notebooks
+      - ./warehouse:/home/iceberg/warehouse
+    environment:
+      - AWS_ACCESS_KEY_ID=admin
+      - AWS_SECRET_ACCESS_KEY=password
+      - AWS_REGION=us-east-1
