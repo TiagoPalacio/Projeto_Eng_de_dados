@@ -47,16 +47,34 @@ graph LR
 
 ## ⚙️ Instalação e Configuração
 
-### 1. Clonar o repositório
+### 1. Instalar o gerenciador uv (caso não possua)
+
+Utilizamos o uv para garantir a velocidade e o isolamento das dependências.
+
+**No Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+**No Linux / macOS / Git Bash:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+---
+
+### 2. Clonar o repositório
 
 ```bash
 git clone https://github.com/TiagoPalacio/Projeto_Eng_de_dados.git
 cd Projeto_Eng_de_dados
 ```
 
-### 2. Sincronizar o ambiente virtual
+---
 
-Utilizamos o uv para garantir a velocidade e o isolamento das dependências. Execute o comando abaixo para criar o `.venv` e instalar todas as bibliotecas necessárias:
+### 3. Sincronizar o ambiente virtual
+
+Execute o comando abaixo para criar o `.venv` e instalar todas as bibliotecas necessárias forçando a versão correta do Python:
 
 ```bash
 uv sync --python 3.11
@@ -78,6 +96,16 @@ Todo o código foi estruturado em Jupyter Notebooks para facilitar a visualizaç
 
 ---
 
+## ⚠️ Solução de Problemas Comuns
+
+- **Erro no Java/Py4J ao iniciar o Spark:**  
+  Se a primeira execução de uma célula falhar informando erros relacionados ao Hadoop ou Py4J, basta clicar no botão **Restart** (Reiniciar Kernel) no topo da interface do Jupyter no VS Code e rodar a célula novamente. Isso limpa a memória e permite que o script do Windows injete os binários corretamente.
+
+- **Pastas de Warehouse:**  
+  As pastas `spark-warehouse` e `iceberg_warehouse` são geradas automaticamente na raiz do projeto ao executar as células de criação das tabelas. Elas estão ignoradas no `.gitignore` para não pesar o repositório.
+
+---
+
 ## 📚 Documentação (MkDocs)
 
 A base de conhecimento, incluindo o Modelo Entidade-Relacionamento (ER) e o detalhamento das tecnologias, está armazenada na pasta `docs/`.
@@ -85,15 +113,17 @@ A base de conhecimento, incluindo o Modelo Entidade-Relacionamento (ER) e o deta
 ### Para rodar o site localmente:
 
 ```bash
-uv run mkdocs serve
+uv run --python 3.11 mkdocs serve
 ```
 
 Acesse: http://127.0.0.1:8000/
 
+---
+
 ### Para publicar a documentação online:
 
 ```bash
-uv run mkdocs gh-deploy
+uv run --python 3.11 mkdocs gh-deploy
 ```
 
 **Acesse o site público aqui:** Documentação do Projeto
@@ -114,9 +144,9 @@ git checkout -b feature/minha-melhoria
 
 ## 👨‍💻 Autores
 
-- **Tiago Fritzen Palácio**
-- **Bruno Tescke**
-- **Gabriel Tomé**  
+- **Tiago Fritzen Palácio**  
+- **Bruno Tescke**  
+- **Gabriel Tomé**
 
 ---
 
