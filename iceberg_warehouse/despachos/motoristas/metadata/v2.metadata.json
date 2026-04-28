@@ -1,9 +1,9 @@
 {
   "format-version" : 2,
-  "table-uuid" : "b1c32010-762a-459b-aaff-045dafcea072",
-  "location" : "c:\\Users\\tiago.309223\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/motoristas",
+  "table-uuid" : "c1ac060e-05a0-4585-bc58-e3a97edb10f6",
+  "location" : "c:\\Users\\User\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/motoristas",
   "last-sequence-number" : 1,
-  "last-updated-ms" : 1777331885566,
+  "last-updated-ms" : 1777391984024,
   "last-column-id" : 4,
   "current-schema-id" : 0,
   "schemas" : [ {
@@ -43,23 +43,23 @@
     "fields" : [ ]
   } ],
   "properties" : {
-    "owner" : "tiago.309223",
+    "owner" : "User",
     "write.parquet.compression-codec" : "zstd"
   },
-  "current-snapshot-id" : 4417813025628210687,
+  "current-snapshot-id" : 7397070003437410997,
   "refs" : {
     "main" : {
-      "snapshot-id" : 4417813025628210687,
+      "snapshot-id" : 7397070003437410997,
       "type" : "branch"
     }
   },
   "snapshots" : [ {
     "sequence-number" : 1,
-    "snapshot-id" : 4417813025628210687,
-    "timestamp-ms" : 1777331885566,
+    "snapshot-id" : 7397070003437410997,
+    "timestamp-ms" : 1777391984024,
     "summary" : {
       "operation" : "append",
-      "spark.app.id" : "local-1777331878638",
+      "spark.app.id" : "local-1777391972132",
       "added-data-files" : "2",
       "added-records" : "2",
       "added-files-size" : "2463",
@@ -71,17 +71,17 @@
       "total-position-deletes" : "0",
       "total-equality-deletes" : "0"
     },
-    "manifest-list" : "c:/Users/tiago.309223/Projeto_Eng_de_dados/iceberg_warehouse/despachos/motoristas/metadata/snap-4417813025628210687-1-b2cb8101-d138-4e2d-b74e-6285ef3f138d.avro",
+    "manifest-list" : "c:/Users/User/Projeto_Eng_de_dados/iceberg_warehouse/despachos/motoristas/metadata/snap-7397070003437410997-1-3780dc34-b884-44e8-9b7d-c43bba620309.avro",
     "schema-id" : 0
   } ],
   "statistics" : [ ],
   "partition-statistics" : [ ],
   "snapshot-log" : [ {
-    "timestamp-ms" : 1777331885566,
-    "snapshot-id" : 4417813025628210687
+    "timestamp-ms" : 1777391984024,
+    "snapshot-id" : 7397070003437410997
   } ],
   "metadata-log" : [ {
-    "timestamp-ms" : 1777331883045,
-    "metadata-file" : "c:/Users/tiago.309223/Projeto_Eng_de_dados/iceberg_warehouse/despachos/motoristas/metadata/v1.metadata.json"
+    "timestamp-ms" : 1777391979322,
+    "metadata-file" : "c:/Users/User/Projeto_Eng_de_dados/iceberg_warehouse/despachos/motoristas/metadata/v1.metadata.json"
   } ]
 }

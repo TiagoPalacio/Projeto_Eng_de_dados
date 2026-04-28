@@ -1,9 +1,9 @@
 {
   "format-version" : 2,
-  "table-uuid" : "771d3e2f-547b-4d44-b5b4-906fd647e79a",
-  "location" : "c:\\Users\\tiago.309223\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/corridas",
+  "table-uuid" : "5a95bad8-86f1-43f7-a406-fef78bf9cc3c",
+  "location" : "c:\\Users\\User\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/corridas",
   "last-sequence-number" : 0,
-  "last-updated-ms" : 1777331883347,
+  "last-updated-ms" : 1777391979874,
   "last-column-id" : 6,
   "current-schema-id" : 0,
   "schemas" : [ {
@@ -53,7 +53,7 @@
     "fields" : [ ]
   } ],
   "properties" : {
-    "owner" : "tiago.309223",
+    "owner" : "User",
     "write.parquet.compression-codec" : "zstd"
   },
   "current-snapshot-id" : -1,

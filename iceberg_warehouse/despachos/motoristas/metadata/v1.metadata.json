@@ -1,9 +1,9 @@
 {
   "format-version" : 2,
-  "table-uuid" : "b1c32010-762a-459b-aaff-045dafcea072",
-  "location" : "c:\\Users\\tiago.309223\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/motoristas",
+  "table-uuid" : "c1ac060e-05a0-4585-bc58-e3a97edb10f6",
+  "location" : "c:\\Users\\User\\Projeto_Eng_de_dados\\iceberg_warehouse/despachos/motoristas",
   "last-sequence-number" : 0,
-  "last-updated-ms" : 1777331883045,
+  "last-updated-ms" : 1777391979322,
   "last-column-id" : 4,
   "current-schema-id" : 0,
   "schemas" : [ {
@@ -43,7 +43,7 @@
     "fields" : [ ]
   } ],
   "properties" : {
-    "owner" : "tiago.309223",
+    "owner" : "User",
     "write.parquet.compression-codec" : "zstd"
   },
   "current-snapshot-id" : -1,
